@@ -14,7 +14,8 @@ export async function getMediumArticles(username: string): Promise<MediumArticle
     const $ = cheerio.load(response.data);
     const articles: MediumArticle[] = [];
 
-    $('item').each((_: number, element: cheerio.Element) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    $('item').each((_: number, element: any) => {
       const title = $(element).find('title').text();
       const link = $(element).find('link').text();
       const date = $(element).find('pubDate').text();
