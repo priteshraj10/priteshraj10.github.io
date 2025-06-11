@@ -4,8 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/priteshraj10.github.io',
-  assetPrefix: '/priteshraj10.github.io/',
+  // If your repo is not at the root, set basePath and assetPrefix
+  // basePath: '',
+  // assetPrefix: '',
 };
 
 export default nextConfig;

@@ -32,7 +32,7 @@ export function HeroSection() {
           "mb-4 text-4xl md:text-6xl font-extrabold tracking-tight text-zinc-100"
         )}
       >
-        Hi, I&apos;m Pritesh Raj
+        Hi, I'm Pritesh Raj
       </motion.h1>
       <motion.h2
         initial={{ opacity: 0 }}
@@ -40,7 +40,7 @@ export function HeroSection() {
         transition={{ duration: 0.7, delay: 0.4 }}
         className="mb-6 text-2xl md:text-3xl font-semibold text-blue-400"
       >
-        <span className="inline-block">I&apos;m a </span>
+        <span className="inline-block">I'm a </span>
         <ContainerTextFlip words={words} />
       </motion.h2>
       <motion.p
