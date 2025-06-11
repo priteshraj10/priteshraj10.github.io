@@ -5,9 +5,9 @@
 name: Deploy Next.js site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting your source branch
   push:
-    branches: ["main"]
+    branches: ["build"] # IMPORTANT: This triggers the workflow on pushes to the 'build' branch
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
