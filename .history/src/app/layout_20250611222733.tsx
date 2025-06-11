@@ -14,19 +14,19 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://priteshraj10.github.io'),
-  title: "Pritesh Raj",
-  description: "Pritesh Raj",
+  title: "Pritesh Raj | AI Architect & Data Scientist",
+  description: "Portfolio of Pritesh Raj - AI Architect, Data Scientist, and Innovator. Explore projects, skills, and contact information.",
   openGraph: {
-    title: "Pritesh Raj",
-    description: "Pritesh Raj",
+    title: "Pritesh Raj | AI Architect & Data Scientist",
+    description: "Portfolio of Pritesh Raj - AI Architect, Data Scientist, and Innovator.",
     url: "https://priteshraj10.github.io",
-    siteName: "Pritesh Raj",
+    siteName: "Pritesh Raj Portfolio",
     images: [
       {
         url: "/file.svg",
         width: 800,
         height: 600,
-        alt: "Pritesh Raj",
+        alt: "Pritesh Raj Portfolio",
       },
     ],
     locale: "en_US",
