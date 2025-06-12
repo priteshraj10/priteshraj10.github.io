@@ -4,9 +4,20 @@ import Image from "next/image";
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
+import { FaLinkedin, FaGithub, FaKaggle, FaMedium, FaXTwitter, FaGravatar } from 'react-icons/fa6';
 
 export function HeroSection() {
   const words = ["Entrepreneur", "AI Architect", "Data Scientist", "Innovator"];
+
+  const socialLinks = [
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/priteshraj", icon: FaLinkedin },
+    { name: "GitHub", url: "https://github.com/priteshraj10", icon: FaGithub },
+    { name: "X (Twitter)", url: "https://x.com/10Priteshraj", icon: FaXTwitter },
+    { name: "Kaggle", url: "https://www.kaggle.com/priteshraj10", icon: FaKaggle },
+    { name: "Medium", url: "https://medium.com/@priteshraj", icon: FaMedium },
+    { name: "Gravatar", url: "https://gravatar.com/priteshraj", icon: FaGravatar },
+  ];
+
   return (
     <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center max-w-6xl mx-auto">
       <motion.div
@@ -52,6 +63,26 @@ export function HeroSection() {
       >
         Passionate about building intelligent systems and innovative solutions that bridge the gap between AI and real-world impact.
       </motion.p>
+
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
+        className="flex justify-center items-center gap-6 mt-8"
+      >
+        {socialLinks.map((link) => (
+          <a
+            key={link.name}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-blue-500 transition-colors duration-300"
+            aria-label={link.name}
+          >
+            <link.icon size={30} />
+          </a>
+        ))}
+      </motion.div>
     </section>
   );
 } 
