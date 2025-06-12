@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://priteshraj10.github.io'),
   title: "Pritesh Raj",
   description: "Pritesh Raj",
+  verification: {
+    google: "google342de175bdf92ea8",
+  },
   openGraph: {
     title: "Pritesh Raj",
     description: "Pritesh Raj",
