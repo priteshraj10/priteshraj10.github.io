@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
-import { FaLinkedin, FaGithub, FaKaggle, FaMedium, FaXTwitter, FaGravatar } from 'react-icons/fa6';
+import { FaLinkedin, FaGithub, FaKaggle, FaMedium, FaXTwitter } from 'react-icons/fa6';
 
 export function HeroSection() {
   const words = ["Entrepreneur", "AI Architect", "Data Scientist", "Innovator"];
@@ -15,7 +15,6 @@ export function HeroSection() {
     { name: "X (Twitter)", url: "https://x.com/10Priteshraj", icon: FaXTwitter },
     { name: "Kaggle", url: "https://www.kaggle.com/priteshraj10", icon: FaKaggle },
     { name: "Medium", url: "https://medium.com/@priteshraj", icon: FaMedium },
-    { name: "Gravatar", url: "https://gravatar.com/priteshraj", icon: FaGravatar },
   ];
 
   return (
@@ -82,6 +81,16 @@ export function HeroSection() {
             <link.icon size={30} />
           </a>
         ))}
+        <a
+          key="Gravatar"
+          href="https://gravatar.com/priteshraj"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:text-blue-500 transition-colors duration-300"
+          aria-label="Gravatar"
+        >
+          <Image src="/gravatar.svg" alt="Gravatar Icon" width={30} height={30} />
+        </a>
       </motion.div>
     </section>
   );
