@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 import { FaLinkedin, FaGithub, FaKaggle, FaMedium, FaXTwitter } from 'react-icons/fa6';
 import { SiHuggingface } from 'react-icons/si';
+import { FaGlobe } from 'react-icons/fa6';
 
 export function HeroSection() {
   const words = ["Entrepreneur", "AI Architect", "Data Scientist", "Innovator"];
@@ -17,6 +18,7 @@ export function HeroSection() {
     { name: "Kaggle", url: "https://www.kaggle.com/priteshraj10", icon: FaKaggle },
     { name: "Medium", url: "https://medium.com/@priteshraj", icon: FaMedium },
     { name: "Hugging Face", url: "https://huggingface.co/priteshraj", icon: SiHuggingface },
+    { name: "Bluesky", url: "https://bsky.app/profile/priteshraj.bsky.social", icon: FaGlobe },
   ];
 
   return (

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 import { FaLinkedin, FaGithub, FaKaggle, FaMedium, FaXTwitter } from 'react-icons/fa6';
 import { SiHuggingface } from 'react-icons/si';
+import { FaGlobe } from 'react-icons/fa6';
 
 export function HeroSection() {
   const words = ["Entrepreneur", "AI Architect", "Data Scientist", "Innovator"];
