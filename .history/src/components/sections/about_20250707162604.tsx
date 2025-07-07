@@ -10,48 +10,51 @@ export function AboutSection() {
   const timelineData = workExperience.map((exp) => ({
     title: exp.period,
     content: (
-      <article className="mb-12" aria-label={`Work experience: ${exp.role} at ${exp.description}`}> 
-        <header>
-          <h3 className="mb-4 text-2xl font-bold text-blue-200">{exp.role}</h3>
-          <p className="mb-4 text-lg text-white">{exp.description}</p>
-        </header>
-        <ul className="mb-8 list-disc list-inside text-white text-base md:text-lg pl-4">
+      <div>
+        <p className="mb-8 text-base font-normal text-white md:text-lg">
+          {exp.role} - {exp.description}
+        </p>
+        <div className="mb-8">
           {exp.achievements.map((achievement, index) => (
-            <li key={index}>{achievement}</li>
-          ))}
-        </ul>
-        <div className="grid grid-cols-2 gap-4">
-          {exp.images.map((image, index) => (
-            <figure key={index} className="flex flex-col items-center">
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60"
-              />
-              <figcaption className="text-xs text-gray-300 mt-2">{image.alt}</figcaption>
-            </figure>
+            <div key={index} className="flex items-center gap-2 text-base text-white md:text-lg">
+              {achievement}
+            </div>
           ))}
         </div>
-      </article>
+        <div className="grid grid-cols-2 gap-4">
+          {exp.images.map((image, index) => (
+            <Image
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0_04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+          ))}
+        </div>
+      </div>
     ),
   }));
 
   const educationTimelineData = education.map((edu: EducationEntry) => ({
     title: edu.period,
     content: (
-      <article className="mb-12" aria-label={`Education: ${edu.institution} - ${edu.program}`}> 
-        <header>
-          <h3 className="mb-4 text-2xl font-bold text-blue-200">{edu.institution}</h3>
-          <p className="mb-4 text-lg text-white">{edu.program}</p>
-        </header>
-      </article>
+      <div>
+        <p className="mb-8 text-base font-normal text-white md:text-lg">
+          {edu.institution}
+        </p>
+        <div className="mb-8">
+          <div className="flex items-center gap-2 text-base text-white md:text-lg">
+            {edu.program}
+          </div>
+        </div>
+      </div>
     ),
   }));
 
   return (
-    <section className="py-20 px-4 flex flex-col items-center max-w-6xl mx-auto" aria-label="About Pritesh Raj">
+    <section className="py-20 px-4 flex flex-col items-center max-w-6xl mx-auto">
       <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
