@@ -23,7 +23,7 @@ export function HeroSection() {
     { name: "X (Twitter)", url: "https://x.com/10Priteshraj", icon: FaXTwitter },
     { name: "Kaggle", url: "https://www.kaggle.com/priteshraj10", icon: FaKaggle },
     { name: "Medium", url: "https://medium.com/@priteshraj", icon: FaMedium },
-    { name: "Hugging Face", url: "https://huggingface.co/priteshraj", icon: (props: { size?: number }) => <SiHuggingface {...props} color="#FFD21F" /> },
+    { name: "Hugging Face", url: "https://huggingface.co/priteshraj", icon: (props) => <SiHuggingface {...props} color="#FFD21F" /> },
   ];
 
   return (

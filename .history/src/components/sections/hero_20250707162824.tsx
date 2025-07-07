@@ -6,24 +6,17 @@ import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 import { FaLinkedin, FaGithub, FaKaggle, FaMedium, FaXTwitter } from 'react-icons/fa6';
 import { SiHuggingface } from 'react-icons/si';
-import React from "react";
 
 export function HeroSection() {
   const words = ["Entrepreneur", "AI Architect", "Data Scientist", "Innovator"];
 
-  type SocialLink = {
-    name: string;
-    url: string;
-    icon: React.ElementType | React.FC<{ size?: number }>;
-  };
-
-  const socialLinks: SocialLink[] = [
+  const socialLinks = [
     { name: "LinkedIn", url: "https://www.linkedin.com/in/priteshraj", icon: FaLinkedin },
     { name: "GitHub", url: "https://github.com/priteshraj10", icon: FaGithub },
     { name: "X (Twitter)", url: "https://x.com/10Priteshraj", icon: FaXTwitter },
     { name: "Kaggle", url: "https://www.kaggle.com/priteshraj10", icon: FaKaggle },
     { name: "Medium", url: "https://medium.com/@priteshraj", icon: FaMedium },
-    { name: "Hugging Face", url: "https://huggingface.co/priteshraj", icon: (props: { size?: number }) => <SiHuggingface {...props} color="#FFD21F" /> },
+    { name: "Hugging Face", url: "https://huggingface.co/priteshraj", icon: (props: any) => <SiHuggingface {...props} color="#FFD21F" /> },
   ];
 
   return (
@@ -87,7 +80,7 @@ export function HeroSection() {
             className="text-white hover:text-blue-500 transition-colors duration-300"
             aria-label={link.name}
           >
-            {React.createElement(link.icon, { size: 30 })}
+            {typeof link.icon === 'function' ? link.icon({ size: 30 }) : <link.icon size={30} />}
           </a>
         ))}
         <a
