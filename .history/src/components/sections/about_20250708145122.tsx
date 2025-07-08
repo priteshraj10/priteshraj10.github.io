@@ -112,7 +112,7 @@ export function AboutSection() {
           </h2>
           <div className="relative w-full overflow-clip flex flex-col items-center">
             <div className="w-full max-w-3xl flex flex-col items-center">
-              {educationTimelineData}
+              <Timeline data={educationTimelineData} />
             </div>
           </div>
         </motion.div>
