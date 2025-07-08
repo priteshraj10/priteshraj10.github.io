@@ -15,14 +15,14 @@ export function AboutSection() {
       <motion.article
         whileHover={{ scale: 1.025, boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.18)' }}
         transition={{ type: 'spring', stiffness: 220, damping: 18 }}
-        className="mb-12 bg-gradient-to-br from-slate-900/90 to-slate-800/80 rounded-2xl shadow-xl border border-blue-700/30 p-10 flex flex-col items-center text-center max-w-3xl mx-auto gap-4 hover:border-blue-400 hover:shadow-blue-500/30 transition-all duration-300"
+        className="mb-12 bg-gradient-to-br from-slate-900/90 to-slate-800/80 rounded-2xl shadow-xl border border-blue-700/30 p-10 flex flex-col gap-4 hover:border-blue-400 hover:shadow-blue-500/30 transition-all duration-300"
         aria-label={`Work experience: ${exp.role} at ${exp.description}`}
       >
-        <header className="w-full flex flex-col items-center">
-          <h3 className="mb-2 text-3xl font-extrabold text-blue-200 leading-tight drop-shadow-lg w-full break-words">{exp.role}</h3>
-          <p className="mb-4 text-xl text-white font-semibold opacity-90 w-full break-words">{exp.description}</p>
+        <header>
+          <h3 className="mb-2 text-3xl font-extrabold text-blue-200 leading-tight drop-shadow-lg">{exp.role}</h3>
+          <p className="mb-4 text-xl text-white font-semibold opacity-90">{exp.description}</p>
         </header>
-        <ul className="mb-0 list-disc list-inside text-white text-base md:text-lg pl-4 space-y-2 w-full text-left">
+        <ul className="mb-0 list-disc list-inside text-white text-base md:text-lg pl-4 space-y-2">
           {exp.achievements.map((achievement, index) => (
             <li key={index}>{achievement}</li>
           ))}
