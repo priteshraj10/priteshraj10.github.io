@@ -41,29 +41,21 @@ export function AboutSection() {
   const educationTimelineData = education.map((edu: EducationEntry) => ({
     title: edu.period,
     content: (
-      <motion.article
-        whileHover={{ scale: 1.03, boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)' }}
-        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-        className="mb-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl shadow-xl border border-slate-700 p-6 flex items-center gap-6 hover:border-blue-400 hover:shadow-blue-500/30 transition-all duration-300"
-        aria-label={`Education: ${edu.institution} - ${edu.program}`}
-      >
-        <div className="flex flex-col items-center min-w-[64px]">
-          <span className="inline-block mb-2 px-3 py-1 rounded-full bg-blue-600 text-white text-sm font-semibold shadow-md border border-blue-300">
-            {edu.period}
-          </span>
+      <article className="mb-12" aria-label={`Education: ${edu.institution} - ${edu.program}`}> 
+        <header className="flex items-center gap-4 mb-4">
           <Image
             src={edu.image}
             alt={edu.institution + ' logo'}
-            width={56}
-            height={56}
-            className="rounded-full bg-white p-1 shadow-md border border-slate-300"
+            width={48}
+            height={48}
+            className="rounded-full bg-white p-1 shadow-md"
           />
-        </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="text-2xl font-bold text-blue-200 mb-1 truncate">{edu.institution}</h3>
-          <p className="text-lg text-white opacity-90 mb-0 truncate">{edu.program}</p>
-        </div>
-      </motion.article>
+          <div>
+            <h3 className="text-2xl font-bold text-blue-200">{edu.institution}</h3>
+            <p className="text-lg text-white">{edu.program}</p>
+          </div>
+        </header>
+      </article>
     ),
   }));
 
