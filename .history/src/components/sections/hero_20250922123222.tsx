@@ -30,93 +30,79 @@ export function HeroSection() {
   ];
 
   return (
-    <section className="relative pt-24 pb-16 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center max-w-6xl mx-auto overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/10 to-transparent pointer-events-none" />
-      
+    <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center max-w-6xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: ANIMATION_CONFIG.hero.duration }}
-        className="mb-10 relative z-10"
+        transition={{ duration: 0.9 }}
+        className="mb-10"
       >
-        <div className="relative">
-          <Image
-            src="/me.jpeg"
-            alt="Pritesh Raj profile photo"
-            width={200}
-            height={200}
-            className="rounded-full border-4 border-blue-500/50 shadow-2xl mx-auto object-cover ring-4 ring-blue-500/20"
-            priority
-          />
-          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-purple-500/20 animate-pulse" />
-        </div>
+        <Image
+          src="/me.jpeg"
+          alt="Pritesh Raj profile photo"
+          width={200}
+          height={200}
+          className="rounded-full border-6 border-blue-600 shadow-2xl mx-auto object-cover"
+          priority
+        />
       </motion.div>
 
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: ANIMATION_CONFIG.hero.delay }}
+        transition={{ duration: 0.8, delay: 0.2 }}
         className={cn(
-          "mb-4 text-5xl md:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent"
+          "mb-4 text-5xl md:text-7xl font-extrabold tracking-tight text-white"
         )}
       >
-        Hi, I&apos;m {SITE_CONFIG.name}
+        Hi, I&apos;m Pritesh Raj
       </motion.h1>
       <motion.h2
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}
-        className="mb-8 text-3xl md:text-4xl font-semibold text-white/90"
+        className="mb-8 text-3xl md:text-4xl font-semibold text-white"
       >
         <span className="inline-block">I&apos;m a </span>
-        <ContainerTextFlip 
-          words={[...HERO_WORDS]} 
-          interval={ANIMATION_CONFIG.textFlip.interval}
-          animationDuration={ANIMATION_CONFIG.textFlip.animationDuration}
-        />
+        <ContainerTextFlip words={words} />
       </motion.h2>
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.6 }}
-        className="max-w-3xl mx-auto text-xl md:text-2xl text-white/80 leading-relaxed"
+        className="max-w-3xl mx-auto text-xl md:text-2xl text-white leading-relaxed"
       >
-        {SITE_CONFIG.description}
+        Passionate about building intelligent systems and innovative solutions that bridge the gap between AI and real-world impact.
       </motion.p>
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.8 }}
-        className="flex justify-center items-center gap-6 mt-12"
+        className="flex justify-center items-center gap-6 mt-8"
       >
         {socialLinks.map((link) => (
-          <motion.a
+          <a
             key={link.name}
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white/70 hover:text-blue-400 transition-all duration-300 hover:scale-110"
+            className="text-white hover:text-blue-500 transition-colors duration-300"
             aria-label={link.name}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
           >
-            {React.createElement(link.icon, { size: 32 })}
-          </motion.a>
+            {React.createElement(link.icon, { size: 30 })}
+          </a>
         ))}
-        <motion.a
+        <a
           key="Gravatar"
-          href={SITE_CONFIG.links.gravatar}
+          href="https://gravatar.com/priteshraj"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white/70 hover:text-blue-400 transition-all duration-300 hover:scale-110"
+          className="text-white hover:text-blue-500 transition-colors duration-300"
           aria-label="Gravatar"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
         >
-          <Image src="/gravatar.svg" alt="Gravatar Icon" width={32} height={32} />
-        </motion.a>
+          <Image src="/gravatar.svg" alt="Gravatar Icon" width={30} height={30} />
+        </a>
       </motion.div>
     </section>
   );

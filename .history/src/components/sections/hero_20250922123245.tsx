@@ -71,7 +71,7 @@ export function HeroSection() {
       >
         <span className="inline-block">I&apos;m a </span>
         <ContainerTextFlip 
-          words={[...HERO_WORDS]} 
+          words={HERO_WORDS} 
           interval={ANIMATION_CONFIG.textFlip.interval}
           animationDuration={ANIMATION_CONFIG.textFlip.animationDuration}
         />

@@ -55,25 +55,8 @@ export function AboutSection() {
 
   // GitHub Projects State
   const [repos, setRepos] = useState<GitHubRepo[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
   useEffect(() => {
-    const fetchRepos = async () => {
-      try {
-        setIsLoading(true);
-        setError(null);
-        const fetchedRepos = await getPublicRepos(GITHUB_CONFIG.username);
-        setRepos(fetchedRepos);
-      } catch (err) {
-        setError("Failed to load GitHub projects");
-        console.error("Error fetching repos:", err);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchRepos();
+    getPublicRepos("priteshraj10").then(setRepos);
   }, []);
 
   return (
@@ -124,68 +107,40 @@ export function AboutSection() {
             GitHub Projects
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto">
-            {isLoading && (
-              <div className="col-span-full text-center text-white/70">
-                <div className="inline-flex items-center gap-2">
-                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-500"></div>
-                  Loading projects...
-                </div>
-              </div>
+            {repos.length === 0 && (
+              <div className="col-span-full text-center text-white/70">Loading projects...</div>
             )}
-            {error && (
-              <div className="col-span-full text-center text-red-400">
-                <p>{error}</p>
-                <button 
-                  onClick={() => window.location.reload()} 
-                  className="mt-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
-                >
-                  Retry
-                </button>
-              </div>
-            )}
-            {!isLoading && !error && repos.length === 0 && (
-              <div className="col-span-full text-center text-white/70">
-                No projects found
-              </div>
-            )}
-            {!isLoading && !error && repos.map((repo) => (
-              <motion.a
+            {repos.map((repo) => (
+              <a
                 key={repo.html_url}
                 href={repo.html_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-2xl shadow-xl border border-slate-700/50 p-6 flex flex-col items-center hover:border-blue-400/50 hover:shadow-blue-500/20 transition-all duration-300 backdrop-blur-sm"
-                whileHover={{ scale: 1.02, y: -5 }}
-                whileTap={{ scale: 0.98 }}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
+                className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl shadow-xl border border-slate-700 p-6 flex flex-col items-center hover:border-blue-400 hover:shadow-blue-500/30 transition-all duration-300"
               >
                 {/* Try to show a preview image or gif if available, else fallback */}
-                <div className="relative w-full h-40 mb-4 rounded-xl bg-white/10 border border-slate-200/20 shadow overflow-hidden">
-                  <img
-                    src={`https://raw.githubusercontent.com/${GITHUB_CONFIG.username}/${repo.name}/main/preview.gif`}
-                    alt={repo.name + " preview"}
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = `https://raw.githubusercontent.com/${GITHUB_CONFIG.username}/${repo.name}/main/preview.png`;
-                      (e.target as HTMLImageElement).onerror = () => {
-                        (e.target as HTMLImageElement).src = "/window.svg";
-                      };
-                    }}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <h3 className="text-xl font-bold text-blue-200 mb-2 text-center group-hover:text-blue-100 transition-colors">{repo.name}</h3>
-                <p className="text-white/80 text-sm mb-4 text-center line-clamp-3 min-h-[60px]">{repo.description || "No description available"}</p>
+                <img
+                  src={`https://raw.githubusercontent.com/priteshraj10/${repo.name}/main/preview.gif`}
+                  alt={repo.name + " preview"}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = `https://raw.githubusercontent.com/priteshraj10/${repo.name}/main/preview.png`;
+                    (e.target as HTMLImageElement).onerror = () => {
+                      (e.target as HTMLImageElement).src = "/window.svg";
+                    };
+                  }}
+                  className="w-full h-40 object-contain rounded-xl bg-white mb-4 border border-slate-200 shadow"
+                />
+                <h3 className="text-xl font-bold text-blue-200 mb-2 text-center group-hover:underline">{repo.name}</h3>
+                <p className="text-white/90 text-base mb-2 text-center line-clamp-3 min-h-[60px]">{repo.description}</p>
                 <div className="flex items-center justify-center gap-4 mt-auto">
-                  <span className="px-3 py-1 rounded-full bg-blue-600/80 text-white text-xs font-semibold">
+                  <span className="px-3 py-1 rounded-full bg-blue-700/80 text-white text-xs font-semibold">
                     {repo.language || "Other"}
                   </span>
                   <span className="flex items-center gap-1 text-yellow-400 text-xs font-semibold">
                     ★ {repo.stargazers_count}
                   </span>
                 </div>
-              </motion.a>
+              </a>
             ))}
           </div>
         </motion.div>

@@ -1,7 +1,6 @@
 import { HeroSection } from "@/components/sections/hero";
 import { AboutSection } from "@/components/sections/about";
 import { Navigation } from "@/components/navigation";
-import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
         </section>
         {/* You can add more sections here, e.g., ProjectsSection, ContactSection, etc. */}
       </main>
-      <Footer />
     </div>
   );
 }
