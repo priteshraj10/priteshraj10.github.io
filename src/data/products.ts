@@ -11,7 +11,7 @@ export const products: Product[] = [
         href: "https://langtrain.xyz",
         title: "Langtrain",
         description:
-            "Privacy-first AI fine-tuning platform enabling users to train custom language models on their own data with enterprise-grade security.",
+            "High-performance infrastructure for fine-tuning Large Language Models at scale. Enabling enterprise AI with distributed training pipelines and secure data orchestration.",
         thumbnail: "/window.svg",
         stack: ["Next.js", "Python", "PyTorch", "AWS"],
     },
@@ -19,7 +19,7 @@ export const products: Product[] = [
         href: "https://github.com/quadtree-ai",
         title: "CliniQX",
         description:
-            "AI-powered EHR/EMR platform for unified healthcare records. Built with custom medical LLM using Hugging Face & LangChain for clinical insights.",
+            "Domain-specific AI infrastructure featuring a custom medical LLM fine-tuned for clinical reasoning and automated healthcare workflows.",
         thumbnail: "/window.svg",
         stack: ["Python", "LangChain", "FastAPI", "MongoDB"],
     },

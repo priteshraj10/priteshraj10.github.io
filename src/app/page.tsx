@@ -58,7 +58,7 @@ export default function Home() {
             className="mb-12"
           >
             <p className="text-xl md:text-2xl text-zinc-400 font-light max-w-2xl leading-relaxed">
-              AI Architect building intelligent systems that bridge technology and real-world impact.
+              LLM Architect specializing in infrastructure for fine-tuning Large Language Models at scale.
             </p>
           </motion.div>
 
@@ -79,7 +79,7 @@ export default function Home() {
             </div>
             <div>
               <span className="block text-zinc-600 text-xs uppercase tracking-wider mb-1">Focus</span>
-              <span className="text-zinc-300">Healthcare AI</span>
+              <span className="text-zinc-300">LLM Infra & Fine-tuning</span>
             </div>
           </motion.div>
 

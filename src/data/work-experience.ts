@@ -15,12 +15,12 @@ export const workExperience: WorkExperience[] = [
     title: "2025 - Present",
     period: "2025 - Present",
     role: "Founder at Langtrain",
-    description: "AI Fine-tuning Platform",
+    description: "Infrastructure for LLM Fine-tuning",
     achievements: [
-      "Building privacy-first AI fine-tuning platform for custom language models",
-      "Enabling users to train models on their own data with enterprise-grade security",
-      "Developing scalable infrastructure with Next.js, Python, PyTorch, and AWS",
-      "Creating intuitive UI for non-technical users to fine-tune AI models"
+      "Building the next generation of LLM fine-tuning infrastructure for enterprise AI",
+      "Developing high-performance training pipelines using PyTorch and distributed computing",
+      "Designing scalable cloud orchestration for model training on AWS and Kubernetes",
+      "Automating data pre-processing and model evaluation workflows for custom LLMs"
     ],
     images: [
       {
@@ -33,17 +33,17 @@ export const workExperience: WorkExperience[] = [
     title: "2023 - 2025",
     period: "2023 - 2025",
     role: "Founder at CliniQX (QuadTree.ai)",
-    description: "Healthcare AI Platform",
+    description: "AI Infrastructure & Medical LLMs",
     achievements: [
-      "Founded AI-powered EHR/EMR platform for unified healthcare records",
-      "Developed custom medical LLM using Hugging Face & LangChain for clinical insights",
-      "Secured 5 Lakh INR seed funding from ISB's iVenture program",
-      "Built scalable cloud architecture with FastAPI, MongoDB, and Docker"
+      "Architected custom medical LLM using Hugging Face and LangChain for clinical reasoning",
+      "Built scalable backend infrastructure with FastAPI, MongoDB, and Docker",
+      "Developed internal fine-tuning pipelines for domain-specific healthcare models",
+      "Secured 5 Lakh INR seed funding from ISB's iVenture program for AI innovation"
     ],
     images: [
       {
         src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d",
-        alt: "Healthcare AI"
+        alt: "AI Infrastructure"
       }
     ]
   },
