@@ -12,7 +12,7 @@ const products = [
     {
         href: "https://langtrain.xyz",
         title: "Langtrain",
-        description: "Privacy-first AI fine-tuning platform enabling users to train custom language models on their own data with enterprise-grade security.",
+        description: "High-performance infrastructure for fine-tuning Large Language Models at scale. Enabling enterprise AI with distributed training pipelines and secure data orchestration.",
         thumbnail: "/window.svg",
         stack: [
             "Next.js",
@@ -24,7 +24,7 @@ const products = [
     {
         href: "https://github.com/quadtree-ai",
         title: "CliniQX",
-        description: "AI-powered EHR/EMR platform for unified healthcare records. Built with custom medical LLM using Hugging Face & LangChain for clinical insights.",
+        description: "Domain-specific AI infrastructure featuring a custom medical LLM fine-tuned for clinical reasoning and automated healthcare workflows.",
         thumbnail: "/window.svg",
         stack: [
             "Python",
@@ -309,6 +309,15 @@ const TechStack = ()=>{
             src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
         },
         {
+            title: "FastAPI",
+            src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+        },
+        {
+            title: "AWS",
+            src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+            invert: true
+        },
+        {
             title: "Docker",
             src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
         },
@@ -362,7 +371,7 @@ const TechStack = ()=>{
                         children: "Expertise"
                     }, void 0, false, {
                         fileName: "[project]/src/components/TechStack.tsx",
-                        lineNumber: 52,
+                        lineNumber: 54,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -370,13 +379,13 @@ const TechStack = ()=>{
                         children: "Technologies"
                     }, void 0, false, {
                         fileName: "[project]/src/components/TechStack.tsx",
-                        lineNumber: 53,
+                        lineNumber: 55,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/TechStack.tsx",
-                lineNumber: 45,
+                lineNumber: 47,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -387,7 +396,7 @@ const TechStack = ()=>{
                         children: "AI & LLM"
                     }, void 0, false, {
                         fileName: "[project]/src/components/TechStack.tsx",
-                        lineNumber: 58,
+                        lineNumber: 60,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -414,7 +423,7 @@ const TechStack = ()=>{
                                         unoptimized: true
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/TechStack.tsx",
-                                        lineNumber: 73,
+                                        lineNumber: 75,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -422,24 +431,24 @@ const TechStack = ()=>{
                                         children: item.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/TechStack.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 83,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, item.title, true, {
                                 fileName: "[project]/src/components/TechStack.tsx",
-                                lineNumber: 67,
+                                lineNumber: 69,
                                 columnNumber: 25
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/TechStack.tsx",
-                        lineNumber: 59,
+                        lineNumber: 61,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/TechStack.tsx",
-                lineNumber: 57,
+                lineNumber: 59,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -449,7 +458,7 @@ const TechStack = ()=>{
                         children: "Development"
                     }, void 0, false, {
                         fileName: "[project]/src/components/TechStack.tsx",
-                        lineNumber: 89,
+                        lineNumber: 91,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -476,7 +485,7 @@ const TechStack = ()=>{
                                         unoptimized: true
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/TechStack.tsx",
-                                        lineNumber: 104,
+                                        lineNumber: 106,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -484,30 +493,30 @@ const TechStack = ()=>{
                                         children: item.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/TechStack.tsx",
-                                        lineNumber: 112,
+                                        lineNumber: 114,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, item.title, true, {
                                 fileName: "[project]/src/components/TechStack.tsx",
-                                lineNumber: 98,
+                                lineNumber: 100,
                                 columnNumber: 25
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/TechStack.tsx",
-                        lineNumber: 90,
+                        lineNumber: 92,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/TechStack.tsx",
-                lineNumber: 88,
+                lineNumber: 90,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/TechStack.tsx",
-        lineNumber: 44,
+        lineNumber: 46,
         columnNumber: 9
     }, this);
 };
@@ -790,12 +799,12 @@ const workExperience = [
         title: "2025 - Present",
         period: "2025 - Present",
         role: "Founder at Langtrain",
-        description: "AI Fine-tuning Platform",
+        description: "Infrastructure for LLM Fine-tuning",
         achievements: [
-            "Building privacy-first AI fine-tuning platform for custom language models",
-            "Enabling users to train models on their own data with enterprise-grade security",
-            "Developing scalable infrastructure with Next.js, Python, PyTorch, and AWS",
-            "Creating intuitive UI for non-technical users to fine-tune AI models"
+            "Building the next generation of LLM fine-tuning infrastructure for enterprise AI",
+            "Developing high-performance training pipelines using PyTorch and distributed computing",
+            "Designing scalable cloud orchestration for model training on AWS and Kubernetes",
+            "Automating data pre-processing and model evaluation workflows for custom LLMs"
         ],
         images: [
             {
@@ -808,17 +817,17 @@ const workExperience = [
         title: "2023 - 2025",
         period: "2023 - 2025",
         role: "Founder at CliniQX (QuadTree.ai)",
-        description: "Healthcare AI Platform",
+        description: "AI Infrastructure & Medical LLMs",
         achievements: [
-            "Founded AI-powered EHR/EMR platform for unified healthcare records",
-            "Developed custom medical LLM using Hugging Face & LangChain for clinical insights",
-            "Secured 5 Lakh INR seed funding from ISB's iVenture program",
-            "Built scalable cloud architecture with FastAPI, MongoDB, and Docker"
+            "Architected custom medical LLM using Hugging Face and LangChain for clinical reasoning",
+            "Built scalable backend infrastructure with FastAPI, MongoDB, and Docker",
+            "Developed internal fine-tuning pipelines for domain-specific healthcare models",
+            "Secured 5 Lakh INR seed funding from ISB's iVenture program for AI innovation"
         ],
         images: [
             {
                 src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d",
-                alt: "Healthcare AI"
+                alt: "AI Infrastructure"
             }
         ]
     },
@@ -918,27 +927,18 @@ var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_
 __turbopack_context__.s({
     "getPublicRepos": (()=>getPublicRepos)
 });
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$octokit$2f$rest$2f$dist$2d$src$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@octokit/rest/dist-src/index.js [app-client] (ecmascript)");
-;
-const octokit = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$octokit$2f$rest$2f$dist$2d$src$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Octokit"]({
-    auth: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.GITHUB_TOKEN
-});
 async function getPublicRepos(username) {
     try {
-        const { data } = await octokit.repos.listForUser({
-            username,
-            sort: 'updated',
-            per_page: 6
+        const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=10`, {
+            next: {
+                revalidate: 3600
+            }
         });
-        return data.map((repo)=>({
-                name: repo.name,
-                description: repo.description || '',
-                html_url: repo.html_url,
-                stargazers_count: repo.stargazers_count || 0,
-                language: repo.language || '',
-                topics: repo.topics || []
-            }));
+        if (!response.ok) {
+            throw new Error('Failed to fetch repos');
+        }
+        const data = await response.json();
+        return data;
     } catch (error) {
         console.error('Error fetching GitHub repos:', error);
         return [];
@@ -1456,7 +1456,7 @@ function Home() {
                                 className: "mb-12",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-xl md:text-2xl text-zinc-400 font-light max-w-2xl leading-relaxed",
-                                    children: "AI Architect building intelligent systems that bridge technology and real-world impact."
+                                    children: "LLM Architect specializing in infrastructure for fine-tuning Large Language Models at scale."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
                                     lineNumber: 60,
@@ -1542,7 +1542,7 @@ function Home() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-zinc-300",
-                                                children: "Healthcare AI"
+                                                children: "LLM Infra & Fine-tuning"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/page.tsx",
                                                 lineNumber: 82,

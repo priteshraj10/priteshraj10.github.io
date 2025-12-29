@@ -148,7 +148,8 @@ const metadata = {
         "Data Scientist",
         "Machine Learning Engineer",
         "Artificial Intelligence",
-        "Healthcare AI",
+        "LLM Infrastructure",
+        "LLM Fine-tuning",
         "CliniQX",
         "LangTrain",
         "QuadTree.ai",
@@ -244,7 +245,8 @@ const jsonLd = {
         "Deep Learning",
         "Natural Language Processing",
         "Computer Vision",
-        "Healthcare AI",
+        "LLM Infrastructure",
+        "LLM Fine-tuning",
         "Python",
         "PyTorch",
         "TensorFlow",
@@ -274,7 +276,7 @@ function RootLayout({ children }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/layout.tsx",
-                        lineNumber: 147,
+                        lineNumber: 149,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -282,13 +284,13 @@ function RootLayout({ children }) {
                         href: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SITE_CONFIG"].url
                     }, void 0, false, {
                         fileName: "[project]/src/app/layout.tsx",
-                        lineNumber: 151,
+                        lineNumber: 153,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/layout.tsx",
-                lineNumber: 146,
+                lineNumber: 148,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
@@ -297,18 +299,18 @@ function RootLayout({ children }) {
                     children: children
                 }, void 0, false, {
                     fileName: "[project]/src/app/layout.tsx",
-                    lineNumber: 156,
+                    lineNumber: 158,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/layout.tsx",
-                lineNumber: 153,
+                lineNumber: 155,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/layout.tsx",
-        lineNumber: 145,
+        lineNumber: 147,
         columnNumber: 5
     }, this);
 }

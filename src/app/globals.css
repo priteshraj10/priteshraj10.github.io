@@ -116,37 +116,38 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
-  
+
   /* Smooth scrolling */
   html {
     scroll-behavior: smooth;
   }
-  
+
   /* Custom scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   ::-webkit-scrollbar-track {
     @apply bg-slate-900;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     @apply bg-gradient-to-b from-blue-500 to-purple-500 rounded-full;
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
     @apply from-blue-400 to-purple-400;
   }
-  
+
   /* Selection styling */
   ::selection {
     @apply bg-blue-500/30 text-white;
   }
-  
+
   /* Focus styles */
   :focus-visible {
     @apply outline-2 outline-blue-500 outline-offset-2;
@@ -154,37 +155,38 @@
 }
 
 @layer utilities {
+
   /* Text gradient utilities */
   .text-gradient {
     @apply bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent;
   }
-  
+
   .text-gradient-blue {
     @apply bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent;
   }
-  
+
   .text-gradient-purple {
     @apply bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent;
   }
-  
+
   /* Glass morphism effect */
   .glass {
     @apply bg-white/10 backdrop-blur-md border border-white/20;
   }
-  
+
   .glass-dark {
     @apply bg-black/20 backdrop-blur-md border border-white/10;
   }
-  
+
   /* Animation utilities */
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }
-  
+
   .animate-glow {
     animation: glow 2s ease-in-out infinite alternate;
   }
-  
+
   /* Line clamp utilities */
   .line-clamp-1 {
     overflow: hidden;
@@ -192,14 +194,14 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
   }
-  
+
   .line-clamp-2 {
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
   }
-  
+
   .line-clamp-3 {
     overflow: hidden;
     display: -webkit-box;
@@ -209,9 +211,12 @@
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -221,6 +226,7 @@
   from {
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
   }
+
   to {
     box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 40px rgba(147, 51, 234, 0.5);
   }
