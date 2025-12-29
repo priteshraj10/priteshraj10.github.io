@@ -51,13 +51,13 @@ export const TechStack = () => {
                 viewport={{ once: true }}
                 className="mb-16"
             >
-                <span className="text-zinc-600 text-sm uppercase tracking-wider">Expertise</span>
+                <span className="text-zinc-500 text-sm font-medium tracking-tight mb-2 block">Expertise</span>
                 <h2 className="text-4xl md:text-5xl font-light text-white mt-2">Technologies</h2>
             </motion.div>
 
             {/* AI/LLM Section */}
             <div className="mb-16">
-                <h3 className="text-zinc-400 text-sm uppercase tracking-wider mb-8">AI & LLM</h3>
+                <h3 className="text-zinc-500 text-sm font-medium tracking-tight mb-8">AI & LLM</h3>
                 <motion.div
                     variants={containerVariants}
                     initial="hidden"
@@ -88,7 +88,7 @@ export const TechStack = () => {
 
             {/* Development Stack Section */}
             <div>
-                <h3 className="text-zinc-400 text-sm uppercase tracking-wider mb-8">Development</h3>
+                <h3 className="text-zinc-500 text-sm font-medium tracking-tight mb-8">Development</h3>
                 <motion.div
                     variants={containerVariants}
                     initial="hidden"

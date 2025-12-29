@@ -114,7 +114,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 box-border;
   }
 
   body {
@@ -210,6 +210,19 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     line-clamp: 3;
+  }
+
+  /* Premium Typography */
+  .heading-premium {
+    @apply tracking-tighter leading-none;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-premium-body {
+    @apply leading-relaxed tracking-wide text-zinc-400;
   }
 }
 

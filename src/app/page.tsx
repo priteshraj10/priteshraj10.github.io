@@ -43,10 +43,10 @@ export default function Home() {
               />
               <div className="h-px flex-1 bg-zinc-800" />
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-white tracking-tight leading-none">
+            <h1 className="text-5xl md:text-7xl lg:text-9xl font-semibold text-white tracking-tighter leading-none">
               Pritesh
               <br />
-              <span className="text-zinc-500">Raj</span>
+              <span className="text-zinc-600">Raj</span>
             </h1>
           </motion.div>
 
@@ -57,7 +57,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mb-12"
           >
-            <p className="text-xl md:text-2xl text-zinc-400 font-light max-w-2xl leading-relaxed">
+            <p className="text-xl md:text-2xl text-zinc-400 font-normal max-w-2xl leading-relaxed tracking-tight">
               LLM Architect specializing in infrastructure for fine-tuning Large Language Models at scale.
             </p>
           </motion.div>
@@ -96,8 +96,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-zinc-600 text-sm uppercase tracking-wider">Selected Work</span>
-            <h2 className="text-4xl md:text-5xl font-light text-white mt-2">Projects</h2>
+            <span className="text-zinc-500 text-sm font-medium tracking-tight mb-2 block">Selected Work</span>
+            <h2 className="text-4xl md:text-6xl font-medium text-white tracking-tighter">Projects</h2>
           </motion.div>
           <Products />
         </div>
@@ -120,8 +120,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-zinc-600 text-sm uppercase tracking-wider">Background</span>
-            <h2 className="text-4xl md:text-5xl font-light text-white mt-2">Experience</h2>
+            <span className="text-zinc-500 text-sm font-medium tracking-tight mb-2 block">Background</span>
+            <h2 className="text-4xl md:text-6xl font-medium text-white tracking-tighter">Experience</h2>
           </motion.div>
           <AboutSection />
         </div>

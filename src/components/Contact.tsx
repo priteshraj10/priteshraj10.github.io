@@ -22,11 +22,11 @@ export const Contact = () => {
                 viewport={{ once: true }}
                 className="mb-16"
             >
-                <span className="text-zinc-600 text-sm uppercase tracking-wider">Get in Touch</span>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mt-2 mb-6">
+                <span className="text-zinc-500 text-sm font-medium tracking-tight mb-2 block">Get in Touch</span>
+                <h2 className="text-4xl md:text-6xl font-medium text-white mt-2 mb-6 tracking-tighter">
                     Let&apos;s work<br />together
                 </h2>
-                <p className="text-zinc-500 text-lg max-w-md">
+                <p className="text-zinc-400 text-xl max-w-md font-light leading-relaxed">
                     Open to opportunities in AI, machine learning, and healthcare technology.
                 </p>
             </motion.div>

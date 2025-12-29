@@ -31,7 +31,7 @@ export function AboutSection() {
     <div className="grid md:grid-cols-2 gap-16">
       {/* Left Column - Work */}
       <div>
-        <h3 className="text-zinc-400 text-sm uppercase tracking-wider mb-8">Work</h3>
+        <h3 className="text-zinc-500 text-sm font-medium tracking-tight mb-8">Work</h3>
         <div className="space-y-8">
           {workExperience.map((exp, idx) => (
             <motion.div
@@ -62,7 +62,7 @@ export function AboutSection() {
       <div className="space-y-16">
         {/* Education */}
         <div>
-          <h3 className="text-zinc-400 text-sm uppercase tracking-wider mb-8">Education</h3>
+          <h3 className="text-zinc-500 text-sm font-medium tracking-tight mb-8">Education</h3>
           <div className="space-y-6">
             {education.map((edu: EducationEntry, idx) => (
               <motion.div
@@ -94,7 +94,7 @@ export function AboutSection() {
 
         {/* Open Source */}
         <div>
-          <h3 className="text-zinc-400 text-sm uppercase tracking-wider mb-8">Open Source</h3>
+          <h3 className="text-zinc-500 text-sm font-medium tracking-tight mb-8">Open Source</h3>
           <div className="space-y-4">
             {isLoading ? (
               <p className="text-zinc-600 text-sm">Loading...</p>
