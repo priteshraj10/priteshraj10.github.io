@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/priteshraj/Downloads/Resumes_2025/Pritesh_Resume/priteshraj10.github.io/src/app/loading.tsx"],"sourcesContent":["export default function Loading() {\n  return (\n    <div className=\"min-h-screen flex items-center justify-center bg-black\">\n      <div className=\"flex flex-col items-center space-y-4\">\n        <div className=\"relative\">\n          <div className=\"animate-spin rounded-full h-16 w-16 border-4 border-blue-500/20 border-t-blue-500\"></div>\n          <div className=\"absolute inset-0 animate-ping rounded-full h-16 w-16 border-4 border-blue-500/20\"></div>\n        </div>\n        <div className=\"text-white/70 text-sm font-medium\">Loading...</div>\n      </div>\n    </div>\n  );\n} "],"names":[],"mappings":";;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAI,WAAU;;sCACb,8OAAC;4BAAI,WAAU;;;;;;sCACf,8OAAC;4BAAI,WAAU;;;;;;;;;;;;8BAEjB,8OAAC;oBAAI,WAAU;8BAAoC;;;;;;;;;;;;;;;;;AAI3D","debugId":null}}]
-}
