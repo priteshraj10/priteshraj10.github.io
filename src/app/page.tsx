@@ -1,22 +1,154 @@
-import { HeroSection } from "@/components/sections/hero";
+"use client";
+
+import { Products } from "@/components/Products";
+import { TechStack } from "@/components/TechStack";
+import { Contact } from "@/components/Contact";
 import { AboutSection } from "@/components/sections/about";
-import { Navigation } from "@/components/navigation";
-import { Footer } from "@/components/footer";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { SITE_CONFIG } from "@/lib/constants";
+import { useRef } from "react";
 
 export default function Home() {
+  const containerRef = useRef(null);
+
   return (
-    <div className="min-h-screen">
-      <Navigation />
-      <main>
-        <section id="home">
-          <HeroSection />
-        </section>
-        <section id="about">
+    <div ref={containerRef} className="bg-zinc-950">
+      {/* Hero Section - Full Screen */}
+      <section id="home" className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 relative overflow-hidden">
+        {/* Subtle background grid */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:72px_72px]" />
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="max-w-6xl mx-auto w-full relative z-10"
+        >
+          {/* Name - Extra Large Typography */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mb-8"
+          >
+            <div className="flex items-center gap-6 mb-6">
+              <Image
+                src="/me.jpeg"
+                alt={SITE_CONFIG.name}
+                width={80}
+                height={80}
+                className="rounded-full object-cover"
+                priority
+              />
+              <div className="h-px flex-1 bg-zinc-800" />
+            </div>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-white tracking-tight leading-none">
+              Pritesh
+              <br />
+              <span className="text-zinc-500">Raj</span>
+            </h1>
+          </motion.div>
+
+          {/* Role */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mb-12"
+          >
+            <p className="text-xl md:text-2xl text-zinc-400 font-light max-w-2xl leading-relaxed">
+              AI Architect building intelligent systems that bridge technology and real-world impact.
+            </p>
+          </motion.div>
+
+          {/* Quick Info */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-wrap gap-8 text-sm text-zinc-500"
+          >
+            <div>
+              <span className="block text-zinc-600 text-xs uppercase tracking-wider mb-1">Based in</span>
+              <span className="text-zinc-300">India</span>
+            </div>
+            <div>
+              <span className="block text-zinc-600 text-xs uppercase tracking-wider mb-1">Current</span>
+              <span className="text-zinc-300">Founder, CliniQX</span>
+            </div>
+            <div>
+              <span className="block text-zinc-600 text-xs uppercase tracking-wider mb-1">Focus</span>
+              <span className="text-zinc-300">Healthcare AI</span>
+            </div>
+          </motion.div>
+
+          {/* Scroll Indicator */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+            className="absolute bottom-12 left-0"
+          >
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+              className="flex flex-col items-center gap-2 text-zinc-600"
+            >
+              <span className="text-xs uppercase tracking-wider">Scroll</span>
+              <div className="w-px h-12 bg-zinc-700" />
+            </motion.div>
+          </motion.div>
+        </motion.div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-32 px-6 md:px-12 lg:px-24">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mb-16"
+          >
+            <span className="text-zinc-600 text-sm uppercase tracking-wider">Selected Work</span>
+            <h2 className="text-4xl md:text-5xl font-light text-white mt-2">Projects</h2>
+          </motion.div>
+          <Products />
+        </div>
+      </section>
+
+      {/* Tech Stack Section */}
+      <section className="py-32 px-6 md:px-12 lg:px-24 bg-zinc-900/50">
+        <div className="max-w-6xl mx-auto">
+          <TechStack />
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section id="about" className="py-32 px-6 md:px-12 lg:px-24">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mb-16"
+          >
+            <span className="text-zinc-600 text-sm uppercase tracking-wider">Background</span>
+            <h2 className="text-4xl md:text-5xl font-light text-white mt-2">Experience</h2>
+          </motion.div>
           <AboutSection />
-        </section>
-        {/* You can add more sections here, e.g., ProjectsSection, ContactSection, etc. */}
-      </main>
-      <Footer />
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-32 px-6 md:px-12 lg:px-24 bg-zinc-900/50">
+        <div className="max-w-6xl mx-auto">
+          <Contact />
+        </div>
+      </section>
     </div>
   );
 }
