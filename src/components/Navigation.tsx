@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { SITE_CONFIG } from "@/lib/constants";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,6 +22,7 @@ export function Navigation() {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -51,7 +53,7 @@ export function Navigation() {
             className="text-xl font-bold text-white"
           >
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Pritesh Raj
+              {SITE_CONFIG.name}
             </span>
           </motion.div>
 

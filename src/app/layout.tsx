@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SITE_CONFIG } from "@/lib/constants";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,7 +63,7 @@ export const metadata: Metadata = {
     siteName: SITE_CONFIG.name,
     images: [
       {
-        url: `${SITE_CONFIG.url}/og-image.png`,
+        url: `${SITE_CONFIG.url}/me.jpeg`,
         width: 1200,
         height: 630,
         alt: `${SITE_CONFIG.name} - AI Architect & Data Scientist`,
@@ -72,7 +74,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SITE_CONFIG.title,
     description: SITE_CONFIG.description,
-    images: [`${SITE_CONFIG.url}/og-image.png`],
+    images: [`${SITE_CONFIG.url}/me.jpeg`],
     creator: "@10Priteshraj",
     site: "@10Priteshraj",
   },
@@ -155,7 +157,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-zinc-100 min-h-screen`}
       >
+        <Navigation />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
