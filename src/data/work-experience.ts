@@ -12,25 +12,38 @@ export interface WorkExperience {
 
 export const workExperience: WorkExperience[] = [
   {
-    title: "2023 - Present",
-    period: "2023 - Present",
+    title: "2025 - Present",
+    period: "2025 - Present",
+    role: "Founder at Langtrain",
+    description: "AI Fine-tuning Platform",
+    achievements: [
+      "Building privacy-first AI fine-tuning platform for custom language models",
+      "Enabling users to train models on their own data with enterprise-grade security",
+      "Developing scalable infrastructure with Next.js, Python, PyTorch, and AWS",
+      "Creating intuitive UI for non-technical users to fine-tune AI models"
+    ],
+    images: [
+      {
+        src: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
+        alt: "AI Platform"
+      }
+    ]
+  },
+  {
+    title: "2023 - 2025",
+    period: "2023 - 2025",
     role: "Founder at CliniQX (QuadTree.ai)",
     description: "Healthcare AI Platform",
     achievements: [
       "Founded AI-powered EHR/EMR platform for unified healthcare records",
       "Developed custom medical LLM using Hugging Face & LangChain for clinical insights",
       "Secured 5 Lakh INR seed funding from ISB's iVenture program",
-      "Built scalable cloud architecture with FastAPI, MongoDB, and Docker",
-      "Integrated OCR and OpenAI APIs for intelligent document processing"
+      "Built scalable cloud architecture with FastAPI, MongoDB, and Docker"
     ],
     images: [
       {
         src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d",
         alt: "Healthcare AI"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1581092921461-39b9d08a9b21",
-        alt: "AI Development"
       }
     ]
   },
@@ -42,17 +55,12 @@ export const workExperience: WorkExperience[] = [
     achievements: [
       "Engineered scalable data pipeline using Python, Flask, and SQL",
       "Automated report generation and delivery using cron jobs",
-      "Implemented OCR system for automated document processing",
-      "Developed interactive dashboards for business analytics"
+      "Implemented OCR system for automated document processing"
     ],
     images: [
       {
         src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
         alt: "Data Science"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-        alt: "Automation"
       }
     ]
   },
@@ -64,17 +72,12 @@ export const workExperience: WorkExperience[] = [
     achievements: [
       "Built ML-powered product recommendation engine",
       "Developed real-time analytics dashboards with React.js",
-      "Implemented A/B testing framework for ML models",
-      "Optimized model performance and reduced latency"
+      "Implemented A/B testing framework for ML models"
     ],
     images: [
       {
         src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
         alt: "ML Engineering"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-        alt: "Data Visualization"
       }
     ]
   },
@@ -86,18 +89,13 @@ export const workExperience: WorkExperience[] = [
     achievements: [
       "Developed advanced surveillance system with OpenCV & TensorFlow",
       "Implemented real-time object detection and tracking",
-      "Built face recognition and license plate detection systems",
-      "Optimized ML models for edge deployment"
+      "Built face recognition and license plate detection systems"
     ],
     images: [
       {
         src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
         alt: "Computer Vision"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-        alt: "ML Research"
       }
     ]
   }
-]; 
+];

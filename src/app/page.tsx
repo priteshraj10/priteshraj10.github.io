@@ -34,11 +34,11 @@ export default function Home() {
           >
             <div className="flex items-center gap-6 mb-6">
               <Image
-                src="/me.jpeg"
+                src="/Pritesh_Linkedin.JPG"
                 alt={SITE_CONFIG.name}
-                width={80}
-                height={80}
-                className="rounded-full object-cover"
+                width={120}
+                height={120}
+                className="rounded-full object-cover border-2 border-zinc-700"
                 priority
               />
               <div className="h-px flex-1 bg-zinc-800" />
@@ -75,7 +75,7 @@ export default function Home() {
             </div>
             <div>
               <span className="block text-zinc-600 text-xs uppercase tracking-wider mb-1">Current</span>
-              <span className="text-zinc-300">Founder, CliniQX</span>
+              <span className="text-zinc-300">Founder, Langtrain</span>
             </div>
             <div>
               <span className="block text-zinc-600 text-xs uppercase tracking-wider mb-1">Focus</span>
@@ -83,22 +83,6 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {/* Scroll Indicator */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
-            className="absolute bottom-12 left-0"
-          >
-            <motion.div
-              animate={{ y: [0, 8, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-              className="flex flex-col items-center gap-2 text-zinc-600"
-            >
-              <span className="text-xs uppercase tracking-wider">Scroll</span>
-              <div className="w-px h-12 bg-zinc-700" />
-            </motion.div>
-          </motion.div>
         </motion.div>
       </section>
 

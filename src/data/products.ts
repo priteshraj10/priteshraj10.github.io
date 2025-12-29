@@ -8,20 +8,20 @@ export interface Product {
 
 export const products: Product[] = [
     {
+        href: "https://langtrain.xyz",
+        title: "Langtrain",
+        description:
+            "Privacy-first AI fine-tuning platform enabling users to train custom language models on their own data with enterprise-grade security.",
+        thumbnail: "/window.svg",
+        stack: ["Next.js", "Python", "PyTorch", "AWS"],
+    },
+    {
         href: "https://github.com/quadtree-ai",
         title: "CliniQX",
         description:
             "AI-powered EHR/EMR platform for unified healthcare records. Built with custom medical LLM using Hugging Face & LangChain for clinical insights.",
         thumbnail: "/window.svg",
         stack: ["Python", "LangChain", "FastAPI", "MongoDB"],
-    },
-    {
-        href: "https://langtrain.space",
-        title: "LangTrain",
-        description:
-            "Privacy-first AI fine-tuning platform enabling users to train custom language models on their own data with enterprise-grade security.",
-        thumbnail: "/window.svg",
-        stack: ["Next.js", "Python", "PyTorch", "AWS"],
     },
     {
         href: "https://github.com/priteshraj10",

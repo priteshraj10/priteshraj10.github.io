@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
   links: {
     linkedin: "https://www.linkedin.com/in/priteshraj",
     github: "https://github.com/priteshraj10",
-    twitter: "https://x.com/10Priteshraj",
+    twitter: "https://x.com/priteshraj_",
     kaggle: "https://www.kaggle.com/priteshraj10",
     medium: "https://medium.com/@priteshraj",
     huggingface: "https://huggingface.co/priteshraj",
@@ -31,7 +31,7 @@ export const ANIMATION_CONFIG = {
 
 export const HERO_WORDS = [
   "Entrepreneur",
-  "AI Architect", 
+  "AI Architect",
   "Data Scientist",
   "Innovator"
 ] as const;

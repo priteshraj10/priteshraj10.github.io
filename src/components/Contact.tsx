@@ -7,10 +7,10 @@ import { ArrowUpRight } from "lucide-react";
 
 export const Contact = () => {
     const links = [
-        { label: "Email", href: "mailto:priteshraj.work@gmail.com", value: "priteshraj.work@gmail.com" },
+        { label: "Email", href: "mailto:priteshraj41@gmail.com", value: "priteshraj41@gmail.com" },
         { label: "LinkedIn", href: SITE_CONFIG.links.linkedin, value: "linkedin.com/in/priteshraj" },
         { label: "GitHub", href: SITE_CONFIG.links.github, value: "github.com/priteshraj10" },
-        { label: "Twitter", href: SITE_CONFIG.links.twitter, value: "@10Priteshraj" },
+        { label: "Twitter", href: SITE_CONFIG.links.twitter, value: "@priteshraj_" },
     ];
 
     return (
