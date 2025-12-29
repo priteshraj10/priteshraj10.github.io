@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div ref={containerRef} className="bg-zinc-950">
       {/* Hero Section - Full Screen */}
-      <section id="home" className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 relative overflow-hidden">
+      <section id="home" aria-label="Introduction" className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 relative overflow-hidden">
         {/* Subtle background grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:72px_72px]" />
 
@@ -35,7 +35,7 @@ export default function Home() {
             <div className="flex items-center gap-6 mb-6">
               <Image
                 src="/Pritesh_Linkedin.JPG"
-                alt={SITE_CONFIG.name}
+                alt={`${SITE_CONFIG.name} - AI Architect profile picture`}
                 width={120}
                 height={120}
                 className="rounded-full object-cover border-2 border-zinc-700"
@@ -87,7 +87,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-32 px-6 md:px-12 lg:px-24">
+      <section id="projects" aria-label="Selected Projects" className="py-32 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -104,14 +104,14 @@ export default function Home() {
       </section>
 
       {/* Tech Stack Section */}
-      <section className="py-32 px-6 md:px-12 lg:px-24 bg-zinc-900/50">
+      <section aria-label="Technology Stack" className="py-32 px-6 md:px-12 lg:px-24 bg-zinc-900/50">
         <div className="max-w-6xl mx-auto">
           <TechStack />
         </div>
       </section>
 
       {/* Experience Section */}
-      <section id="about" className="py-32 px-6 md:px-12 lg:px-24">
+      <section id="about" aria-label="Professional Experience" className="py-32 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -128,7 +128,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-32 px-6 md:px-12 lg:px-24 bg-zinc-900/50">
+      <section id="contact" aria-label="Contact Information" className="py-32 px-6 md:px-12 lg:px-24 bg-zinc-900/50">
         <div className="max-w-6xl mx-auto">
           <Contact />
         </div>

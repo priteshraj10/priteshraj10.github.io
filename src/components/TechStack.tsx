@@ -76,7 +76,7 @@ export const TechStack = () => {
                                 src={item.src}
                                 width={24}
                                 height={24}
-                                alt={item.title}
+                                alt={`${item.title} logo`}
                                 className="object-contain"
                                 unoptimized
                             />
@@ -107,7 +107,7 @@ export const TechStack = () => {
                                 src={item.src}
                                 width={24}
                                 height={24}
-                                alt={item.title}
+                                alt={`${item.title} logo`}
                                 className={`object-contain ${item.invert ? 'invert' : ''}`}
                                 unoptimized
                             />

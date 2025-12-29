@@ -30,6 +30,13 @@ export const metadata: Metadata = {
     "Artificial Intelligence",
     "LLM Infrastructure",
     "LLM Fine-tuning",
+    "Generative AI",
+    "RAG",
+    "LLM Ops",
+    "LangChain Developer",
+    "Fine-tuning LLMs",
+    "AI Infrastructure",
+    "Machine Learning Operations",
     "CliniQX",
     "LangTrain",
     "QuadTree.ai",
@@ -138,6 +145,17 @@ const jsonLd = {
   ],
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE_CONFIG.title,
+  url: SITE_CONFIG.url,
+  author: {
+    "@type": "Person",
+    name: SITE_CONFIG.name,
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -149,6 +167,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
         <link rel="canonical" href={SITE_CONFIG.url} />
       </head>
