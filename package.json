@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build"
+    "deploy": "pnpm run build"
   },
   "dependencies": {
     "@octokit/rest": "^22.0.0",
