@@ -126,6 +126,7 @@ const jsonLd = {
     SITE_CONFIG.links.kaggle,
     SITE_CONFIG.links.medium,
     SITE_CONFIG.links.huggingface,
+    SITE_CONFIG.links.googleScholar,
   ],
   knowsAbout: [
     "Artificial Intelligence",

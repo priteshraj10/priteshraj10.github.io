@@ -11,6 +11,7 @@ export const SITE_CONFIG = {
     kaggle: "https://www.kaggle.com/priteshraj10",
     medium: "https://medium.com/@priteshraj",
     huggingface: "https://huggingface.co/priteshraj",
+    googleScholar: "https://scholar.google.com/citations?user=QvCdx8QAAAAJ&hl=en",
     gravatar: "https://gravatar.com/priteshraj",
   },
 } as const;

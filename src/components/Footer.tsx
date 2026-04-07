@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { SITE_CONFIG } from "@/lib/constants";
 import { FaLinkedin, FaGithub, FaKaggle, FaMedium, FaXTwitter } from 'react-icons/fa6';
+import { SiGooglescholar } from 'react-icons/si';
 import Image from "next/image";
 
 export function Footer() {
@@ -14,6 +15,7 @@ export function Footer() {
     { name: "X (Twitter)", url: SITE_CONFIG.links.twitter, icon: FaXTwitter },
     { name: "Kaggle", url: SITE_CONFIG.links.kaggle, icon: FaKaggle },
     { name: "Medium", url: SITE_CONFIG.links.medium, icon: FaMedium },
+    { name: "Google Scholar", url: SITE_CONFIG.links.googleScholar, icon: SiGooglescholar },
   ];
 
   return (

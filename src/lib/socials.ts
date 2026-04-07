@@ -1,6 +1,7 @@
 import { Linkedin, Github, Twitter } from "lucide-react";
 import { SITE_CONFIG } from "./constants";
 import { FaKaggle, FaMedium } from 'react-icons/fa6';
+import { SiGooglescholar } from 'react-icons/si';
 
 export const socials = [
     {
@@ -27,5 +28,10 @@ export const socials = [
         href: SITE_CONFIG.links.medium,
         label: "Medium",
         icon: FaMedium,
+    },
+    {
+        href: SITE_CONFIG.links.googleScholar,
+        label: "Scholar",
+        icon: SiGooglescholar,
     },
 ];

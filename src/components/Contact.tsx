@@ -11,6 +11,7 @@ export const Contact = () => {
         { label: "LinkedIn", href: SITE_CONFIG.links.linkedin, value: "linkedin.com/in/priteshraj" },
         { label: "GitHub", href: SITE_CONFIG.links.github, value: "github.com/priteshraj10" },
         { label: "Twitter", href: SITE_CONFIG.links.twitter, value: "@priteshraj_" },
+        { label: "Scholar", href: SITE_CONFIG.links.googleScholar, value: "scholar.google.com" },
     ];
 
     return (
